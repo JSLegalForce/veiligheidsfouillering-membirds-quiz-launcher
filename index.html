@@ -33,7 +33,7 @@ body{background:#0a0f1e;display:flex;align-items:center;justify-content:center;m
 .brand{font-weight:900;font-size:1.85rem;color:#fff;letter-spacing:-0.02em;margin-bottom:4px;}
 .divider{width:48px;height:2px;background:linear-gradient(90deg,transparent,rgba(138,154,181,0.5),transparent);margin:16px auto;}
 .sub{font-size:0.71rem;color:rgba(138,154,181,0.7);font-weight:600;letter-spacing:0.2em;text-transform:uppercase;margin-bottom:40px;}
-.btn{position:relative;overflow:hidden;width:100%;background:linear-gradient(135deg,#1a2a5e,#2d4099);color:#fff;border:1px solid rgba(138,154,181,0.25);border-radius:14px;padding:18px 24px;font-family:'Outfit',sans-serif;font-weight:800;font-size:1.05rem;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:12px;box-shadow:0 4px 28px rgba(26,42,94,0.6);transition:transform 0.2s,box-shadow 0.2s;}
+.btn{position:relative;overflow:hidden;width:100%;background:linear-gradient(135deg,#1a2a5e,#2d4099);color:#fff;border:1px solid rgba(138,154,181,0.25);border-radius:14px;padding:18px 24px;font-family:'Outfit',sans-serif;font-weight:800;font-size:1.05rem;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:12px;box-shadow:0 4px 28px rgba(26,42,94,0.6);transition:transform 0.2s,box-shadow 0.2s;text-decoration:none;}
 .btn:hover{transform:translateY(-3px);box-shadow:0 10px 44px rgba(45,64,153,0.7);}
 .btn:active{transform:scale(0.98);}
 .btn::after{content:'';position:absolute;top:0;left:-100%;width:50%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.12),transparent);animation:shimmer 3s ease-in-out infinite 1.5s;}
@@ -59,10 +59,10 @@ body{background:#0a0f1e;display:flex;align-items:center;justify-content:center;m
 <div class="brand">JS Legal Force</div>
 <div class="divider"></div>
 <div class="sub">Kennisquiz &middot; De veiligheidsfouillering voor BOA's</div>
-<button class="btn" onclick="window.open('quiz.html','_blank','width='+screen.width+',height='+screen.height)">
+<a class="btn" href="quiz.html">
 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
 Open quiz op groot scherm
-</button>
+</a>
 </div>
 </body>
 </html>
